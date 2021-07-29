@@ -1,5 +1,5 @@
 # r_test
-Code for testing your React applications<br><br>
+<b align="center">Code for testing your React applications</b><br><br>
 <a href='https://nodejs.org/en/'>
     <img src="https://img.shields.io/badge/node-14.16.1-green">
   <a/>
