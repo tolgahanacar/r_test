@@ -14,6 +14,6 @@
     <img src="https://img.shields.io/badge/%40testing--library%2Freact-%5E11.2.7-yellow">
   <a/><hr>
 <div>
-<h3>Release Date</h3>
-<span>Aug 2, 2021</span>
+<h3>Release Date | Last Update</h3>
+<span>Jul 29, 2021 | Aug 2, 2021</span>
 </div>
