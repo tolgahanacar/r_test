@@ -13,9 +13,3 @@
     <a href='https://reactjs.org/'>
     <img src="https://img.shields.io/badge/%40testing--library%2Freact-%5E11.2.7-yellow">
   <a/>
-      
-  
-
-<h2>Guide</h2>
-coming soon...
-
