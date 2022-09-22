@@ -12,4 +12,8 @@
       <a/>
     <a href='https://reactjs.org/'>
     <img src="https://img.shields.io/badge/%40testing--library%2Freact-%5E11.2.7-yellow">
-  <a/>
+  <a/><hr>
+<div>
+<h3>Release Date</h3>
+<span>Aug 2, 2021</span>
+</div>
