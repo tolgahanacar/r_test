@@ -1,4 +1,4 @@
-import { getByTestId, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import App from "./App";
 
 beforeAll(() => {
@@ -10,42 +10,45 @@ beforeEach(() => {
   console.log("Before Each");
 });
 
+afterEach(() => {
+  console.log("After Each");
+});
+
 afterAll(() => {
   console.log("After All");
 });
 
-afterEach(() => {
-  console.log("After Each");
-  //cleanup(); -- old
-});
+test("Button, input, and link elements render and have correct states", () => {
+  const rbutton = screen.getByTestId("r_button");
+  const rinput = screen.getByTestId("r_input");
+  const rlink = screen.getByTestId("r_link");
 
-test("toBeDisabled", () => {
-  const rbutton = screen.getByTestId("r_button"); //get id
-  const rinput  = screen.getByTestId("r_input");
-  const rlink   = screen.getByTestId("r_link");
-  // or 
-  // const rlink   = screen.getByText("r_link");
+  // Button and input should be disabled
   expect(rbutton).toBeDisabled();
   expect(rinput).toBeDisabled();
+
+  // Link should not be disabled
   expect(rlink).not.toBeDisabled();
+  
+  // Optional: Debugging the rendered elements
   screen.debug();
 });
 
-/* access dom */
-// test("Header render correctly", () => {
+/* Uncomment and use these tests if needed */
+
+// test("Header renders correctly", () => {
 //   const headerElement = screen.getByText(/React_Test/i);
-//   expect(headerElement).toBeInTheDocument(); //The title fits the document correctly.
+//   expect(headerElement).toBeInTheDocument();
 //   expect(headerElement).toHaveTextContent("React_Test");
 // });
 
-// test("Button Element render correctly", () => {
+// test("Button element renders correctly", () => {
 //   const buttonElement = screen.getByRole("button");
 //   expect(buttonElement).toHaveTextContent("Test Button");
-//   //expect(buttonElement).toBeDisabled(); //Test Fail, Button is disable or enable?
-//   expect(buttonElement).toBeEnabled(); //Test Success, Button is disable or enable?
+//   expect(buttonElement).toBeEnabled();
 // });
 
-// test("Blue Element render correctly", () => {
+// test("Blue element renders correctly", () => {
 //   const blueElement = screen.getByText(/this color is blue/i);
 //   expect(blueElement).toBeInTheDocument();
 //   expect(blueElement).toHaveTextContent("this color is blue");
