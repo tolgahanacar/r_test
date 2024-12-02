@@ -22,7 +22,7 @@
                         <tbody>
                             <tr>
                                 <td>Jul 29, 2021</td>
-                                <td>Oct 7, 2024</td>
+                                <td>Dec 2, 2024</td>
                             </tr>
                         </tbody>
                     </table>
