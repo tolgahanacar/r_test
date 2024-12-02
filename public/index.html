@@ -4,17 +4,31 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="author" content="Tolgahan Acar">
+    <meta name="author" content="Tolgahan Acar" />
     <meta name="description" content="Web site created using create-react-app" />
 
-    <!-- SEO and Security enhancements -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Ensure compatibility with IE/Edge -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';" /> <!-- Basic CSP -->
-    
+    <!-- SEO Enhancements -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="index, follow" /> <!-- Arama motorları için -->
+    <meta name="keywords" content="React, Tolgahan Acar, Test App, JavaScript" />
+    <meta property="og:title" content="r_test" />
+    <meta property="og:description" content="Web site created using create-react-app" />
+    <meta property="og:image" content="%PUBLIC_URL%/logo192.png" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@TolgahanAcar" />
+
+    <!-- Security Enhancements -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';" />
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains" />
+    <meta name="referrer" content="no-referrer" />
+
+    <!-- Favicon and Manifest -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
+
     <title>r_test</title>
   </head>
   <body>
