@@ -65,6 +65,7 @@
   font-weight: 800;
   background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-indigo) 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
   letter-spacing: -0.025em;
