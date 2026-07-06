@@ -20,7 +20,7 @@ afterAll(() => {
 
 test("Button, input, and link elements render and have correct states", () => {
   render(<App />);
-  
+
   // Button
   const rbutton = screen.getByTestId("r_button");
   expect(rbutton).toBeInTheDocument();

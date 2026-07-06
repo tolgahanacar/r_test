@@ -1,6 +1,6 @@
 // src/App.js
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 const App = () => {
   const handleLinkClick = (e) => {
@@ -21,7 +21,13 @@ const App = () => {
         <div className="dashboard-grid">
           <div className="grid-section">
             <h2 className="section-title">Status Overview</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "0.5rem",
+              }}
+            >
               <div className="status-indicator">
                 <span className="dot"></span>
                 <span>Active Sandbox Mode</span>
@@ -36,7 +42,9 @@ const App = () => {
           {/* Active Sandbox Elements Section */}
           <div className="grid-section">
             <h2 className="section-title">Interactive Elements</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div
+              style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
+            >
               <div>
                 <button className="btn-primary" type="button">
                   Test Button
@@ -52,13 +60,15 @@ const App = () => {
           {/* Locked / Disabled Controls Section */}
           <div className="grid-section">
             <h2 className="section-title">Security Restrictions</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div
+              style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
+            >
               {/* Disabled Submit Button */}
               <div>
-                <button 
-                  className="btn-primary" 
-                  data-testid="r_button" 
-                  type="submit" 
+                <button
+                  className="btn-primary"
+                  data-testid="r_button"
+                  type="submit"
                   disabled
                 >
                   r_sub
@@ -68,11 +78,11 @@ const App = () => {
               {/* Disabled Input Element */}
               <fieldset className="fieldset-container" disabled>
                 <div className="input-wrapper">
-                  <input 
-                    className="text-input" 
-                    type="text" 
-                    data-testid="r_input" 
-                    placeholder="Giriş devre dışı" 
+                  <input
+                    className="text-input"
+                    type="text"
+                    data-testid="r_input"
+                    placeholder="Giriş devre dışı"
                   />
                 </div>
               </fieldset>
@@ -84,14 +94,17 @@ const App = () => {
                   data-testid="r_link"
                   href="https://tolgahanacar.net"
                   onClick={handleLinkClick}
-                  style={{ color: 'gray', pointerEvents: 'none', cursor: 'default' }}
+                  style={{
+                    color: "gray",
+                    pointerEvents: "none",
+                    cursor: "default",
+                  }}
                 >
                   r_link
                 </a>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
